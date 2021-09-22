@@ -1,0 +1,84 @@
+let a=[
+    {
+        "filepath": "blogposts/9hhel4dfsfe5uo2aev8abq0d7rfpjfugsr5lipo1",
+        "post_title": "Quarantine Chronicles - Day 0 of being Covid Positive",
+        "post_excerpt": "Day 0 of getting Covid in Mumbai during wave 3 of the Coronavirus crisis",
+        "author": "sai",
+        "published_unix_ts": 1626307200,
+        "status": "published",
+        "tags": ""
+    },
+    {
+        "filepath": "blogposts/ufn9pt1t63ts8n6frnfpqpnnqorn4etcnjc4kt01",
+        "post_title": "A blogpost with downloadable content",
+        "post_excerpt": "A blogpost with downloadable content (DLC)",
+        "author": "Sai Ramachandran",
+        "published_unix_ts": 1622505600,
+        "status": "draft",
+        "tags": ""
+    },
+    {
+        "filepath": "blogposts/2021-02-11-1613037283413-dtfe6kd0ek6rluch71frtcp9de5c3nkm3f3laqo1",
+        "post_title": "Moogle in the classroom",
+        "post_excerpt": "Centralize classroom instructions and sidebar conversations in a single url. Avoid interminable email threads which are often not relevant to everyone.",
+        "author": "John Doe",
+        "published_unix_ts": 1613001600,
+        "tags": "AWS, SES, Moogle",
+        "status": "published"
+    },
+    {
+        "filepath": "blogposts/4o6c5or1l8r5t5pem69evtbqnle1nvjnu35lipo1",
+        "post_title": "How do you eat an elephant?",
+        "post_excerpt": "While I have not officially signed up for the 100 days of run",
+        "author": "sai",
+        "published_unix_ts": 1629575369,
+        "status": "published",
+        "tags": ""
+    },
+    {
+        "filepath": "blogposts/5845d4b58sol6ev2r759s85h6vb93lgrpqh303g1",
+        "post_title": "I chose not to follow a writer a Medium. And I know why.",
+        "post_excerpt": "Recently, Medium's algorithms showed me this\n<https://filippopovic08.medium.com/leap-aerospace-revea",
+        "author": "Sai from Moogle.cc",
+        "published_unix_ts": 1631148510,
+        "status": "published",
+        "tags": ""
+    },
+    {
+        "filepath": "blogposts/5845d4b58sol6ev2r759s85h6vb93lgrpqh303g1",
+        "post_title": "I chose not to follow a writer a Medium. And I know why.",
+        "post_excerpt": "Recently, Medium's algorithms showed me this\n<https://filippopovic08.medium.com/leap-aerospace-revea",
+        "author": "Sai from Moogle.cc",
+        "published_unix_ts": 1631148510,
+        "status": "published",
+        "tags": ""
+    },
+    {
+        "filepath": "blogposts/5845d4b58sol6ev2r759s85h6vb93lgrpqh303g1",
+        "post_title": "I chose not to follow a writer a Medium. And I know why.",
+        "post_excerpt": "Recently, Medium's algorithms showed me this\n<https://filippopovic08.medium.com/leap-aerospace-revea",
+        "author": "Sai from Moogle.cc",
+        "published_unix_ts": 1631148510,
+        "status": "published",
+        "tags": ""
+    },
+    {
+        "filepath": "blogposts/5845d4b58sol6ev2r759s85h6vb93lgrpqh303g1",
+        "post_title": "I chose not to follow a writer a Medium. And I know why.",
+        "post_excerpt": "Recently, Medium's algorithms showed me this\n<https://filippopovic08.medium.com/leap-aerospace-revea",
+        "author": "Sai from Moogle.cc",
+        "published_unix_ts": 1631148510,
+        "status": "published",
+        "tags": ""
+    },
+    {
+        "filepath": "blogposts/50f7s01de3jgtilp358tj0r0rgunkf3rgo191bg1",
+        "post_title": "Personalised fertiliser schedules for every crop",
+        "post_excerpt": "Your plants need various nutrients to keep them healthy and bring the best\nyield. We provide you wit",
+        "author": "Sai from Moogle.cc",
+        "published_unix_ts": 1631174078,
+        "status": "published",
+        "tags": ""
+    }
+]
+export default a;
