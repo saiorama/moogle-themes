@@ -107,3 +107,8 @@ Then, from within your project folder:
 npm run build
 surge public my-project.surge.sh
 ```
+## Project Description
+Inside source folder-
+1) Components folder- Contains all the components of the project in .svelte format
+2) Data folder- Contains all the data part of the project including the json data
+3) Routes folder- Contains all the routes part of the project
