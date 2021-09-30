@@ -1,8 +1,9 @@
 <script>
 	import Home from '../components/Home.svelte';
+	import Blog from '../components/Blog.svelte';
 	import { Router, Route } from "svelte-routing";
-	export let url="";
 </script>
-<Router {url}>
+<Router>
 	<Route path="/" component="{Home}"/>
+	<Route path="posts?id=blogposts/9hhel4dfsfe5uo2aev8abq0d7rfpjfugsr5lipo1" component="{Blog}"/>
 </Router>
