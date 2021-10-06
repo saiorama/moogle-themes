@@ -1,6 +1,19 @@
 import Data from '../../data/index.json'
 import moment from 'moment';
 import Post from '../post/post'
+import axios from 'axios';
+
+const file_path = (path) => {
+    return (
+        axios.get(`https://sai.moogle.cc/post?id=${path}`)
+            .then(res => {
+                console.log(res);
+            })
+            .catch(err => {
+                console.log(err);
+            })
+    )
+}
 
 const sort_posts = () => {
     return (
@@ -28,7 +41,7 @@ const posts = () => {
         <div className="container d-flex flex-wrap justify-content-evenly">
             {
                 Data.map((ele, index) => {
-                    return <Post title={ele.post_title} author={ele.author} time={getMoment(ele.published_unix_ts).fromNow()} pos={index} url={img[index]} />
+                    return <Post fil={file_path(ele.filepath)} title={ele.post_title} author={ele.author} time={getMoment(ele.published_unix_ts).fromNow()} pos={index} url={img[index]} />
 
                 })
             }

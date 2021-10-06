@@ -1,18 +1,11 @@
 <script>
+    import { Link } from 'svelte-routing';
     export let title;
     export let author;
     export let time;
     export let url;
     export let pos;
     export let fil;
-    import axios from 'axios';
-    axios.get(`https://sai.moogle.cc/post?id=${fil}`)
-    .then(res=>{
-        console.log(res);
-    })
-    .catch(err=>{
-            console.log(err);
-    })
 </script>
 {#if  pos == 0}
 <div class="card w-75 h-30 text-end bg-dark mx-5 my-5 d-flex flex-row">
@@ -21,7 +14,7 @@
         <h5 class="card-title text-white heading">{title}</h5>
         <p class="card-text text-white-50 text-end mb-0">- {author}</p>
         <p class="card-text text-white-50 text-end fw-bolder mb-5">{time}</p>
-        <a href="#" class="btn btn-info">Read More</a>
+        <Link to="/posts?id={fil}" class="btn btn-info">Read More</Link>
     </div>
 </div>
 {:else}
@@ -31,7 +24,7 @@
         <h5 class="card-title text-white heading">{title}</h5>
         <p class="card-text text-white-50 text-end mb-0">- {author}</p>
         <p class="card-text text-white-50 text-end fw-bolder mb-5">{time}</p>
-        <a href="#" class="btn btn-info">Read More</a>
+        <Link to="/posts?id={fil}" class="btn btn-info">Read More</Link>
     </div>
 </div>
 {/if}

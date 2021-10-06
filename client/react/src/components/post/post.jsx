@@ -1,6 +1,5 @@
-import React from 'react'
 
-const post = ({ title, author, time, pos, url }) => {
+const post = ({ fil,title, author, time, pos, url }) => {
     if (pos === 0) {
         return (
             <>

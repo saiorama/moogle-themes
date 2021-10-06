@@ -1,13 +1,22 @@
 <script>
     import Post from "../post/post.svelte";
-    import Data from "../../data/index.js";
-    import moment from 'moment';
-    // const post_show = () => {
-    //     Data.map((ele, index) => {
-    //                 return <Post title={ele.post_title} author={ele.author} time={getMoment(ele.published_unix_ts).fromNow()} pos={index} url={img[index]} />
-
-    //             })
-    // }
+    // import Data from "../../data/index.js";
+    import moment from "moment";
+    import axios from "axios";
+    let Data=[];
+    async function request_data()
+    {
+        await axios
+            .get(`http://localhost:3000/`)
+            .then((res) => {
+                Data = res.data;
+            })
+            .catch((err) => {
+                console.log(err);
+            });
+    };
+    request_data();
+    console.log(Data)
     let img = [
         "https://neilpatel.com/wp-content/uploads/2017/08/blog.jpg",
         "http://cdn2.hubspot.net/hub/53/file-23115630-jpg/blog/images/blogging_image.jpg",
@@ -38,6 +47,13 @@
 
 <div class="container d-flex flex-wrap justify-content-evenly">
     {#each Data as ele, i}
-        <Post title={ele.post_title} author={ele.author} pos={i} time="{getMoment(ele.published_unix_ts).fromNow()}" url="{img[i]}" fil="{ele.filepath}"/>
+        <Post
+            title={ele.post_title}
+            author={ele.author}
+            pos={i}
+            time={getMoment(ele.published_unix_ts).fromNow()}
+            url={img[i]}
+            fil={ele.filepath}
+        />
     {/each}
 </div>

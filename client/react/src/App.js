@@ -3,7 +3,6 @@ import './App.css';
 import Home from '../src/pages/Home'
 import "./style/blog-css.css"
 import {Switch, Route} from 'react-router-dom';
-
 function App() {
   return (
     <>
